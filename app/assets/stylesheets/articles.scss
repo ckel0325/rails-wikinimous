@@ -3,6 +3,4 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css");
 
-.newbtn {
-  color: pink;
-}
+@import url("../stylesheets/components/navbar.scss")
