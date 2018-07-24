@@ -1,0 +1,10 @@
+<h1>OnePiece</h1>
+
+<% @articles.each do |char| %>
+  <h4><%= link_to char.title, article_path(char) %> <%= link_to "Delete", article_path(char), method: :delete, data: { confirm: "Are you sure?" } %></h4>
+  <p><%= char.content %></p>
+<% end %>
+
+<div class="btn btn-primary">
+<%= link_to "new character", new_article_path, class: "newbtn" %>
+</div>
